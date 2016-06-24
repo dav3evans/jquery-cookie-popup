@@ -1,0 +1,123 @@
+.clear:after	
+	{
+		clear:both;
+		display: block;
+		content: '';
+	}
+
+input {
+	border-radius: 5px;
+}
+
+
+#modal {
+	visibility:hidden;
+	max-width:100%;
+	padding:8px;
+
+	background:rgba(0,0,0,.3);
+
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
+	border-radius:8px;
+
+	position:absolute !important;
+	top:20%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index:99999;
+}
+
+#popup-content {
+	background-image: url('/media/wysiwyg/popup/modal-bg.jpg');
+	background-size: cover;
+}
+
+.button img { 
+	float:left;
+	width:33px;
+	height:33px;
+}
+
+.reveal-modal-bg { 
+	position: fixed; 
+	height: 100%;
+	width: 100%;
+	background: #000;
+	background: rgba(0,0,0,.4);
+	z-index: 100;
+	display: none;
+	top: 0;
+	left: 0; 
+}
+
+#closebutton {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	opacity: 0.7;
+	z-index: 102;
+}
+
+.popup-header, .popup-footer {
+	margin-bottom: 10px;
+}
+
+.popup-header, .popup-footer {
+	margin-right: 4%;
+	text-align: center;
+	color: #6E6F70;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family:'CaslonOldFaceW01-Roman';
+	font-size: 18px;
+}
+
+.popup-header img, .popup-footer img {
+	max-width: 100%;
+}
+
+.popup-footer a span {
+	font-size: 16px;
+	font-family:'CaslonOldFaceW01-Roman';
+	font-weight: bold;
+}
+
+.popup-footer i {
+	margin: 0 5px 10px;
+}
+
+.popup-footer a {
+	color: #6E6F70;
+}
+
+#modal form {
+	margin-bottom: 0;
+}
+
+#modal label, input {
+	color: #6E6F70;
+	font-family:'CaslonOldFaceW01-Roman';
+	font-weight: bold;
+	font-size: 16px;
+}
+
+#modal label, .button {
+	text-transform: uppercase;
+}
+
+#modal .close {
+	opacity: 1;
+}
+
+.submit-wrapper {
+	width: 96%;
+}
+
+
+	@media screen and (min-width: 960px) { 
+		#modal {
+			max-width: 40%;
+}
+
